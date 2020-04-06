@@ -3,6 +3,7 @@ package com.example.l;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -14,7 +15,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        img_stories = findViewById(R.id.img_stories);
+        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+        img_stories = findViewById(R.id.btn_stories);
     img_stories.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
