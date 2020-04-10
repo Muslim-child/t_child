@@ -16,7 +16,7 @@ public class webView_Stories extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_web_view__stories);
         web_stories =(WebView) findViewById(R.id.webView_stories);
-        btn_sound = (Button)findViewById(R.id.btn_sound);
+
         Intent data = getIntent();
         int page = data.getExtras().getInt("page");
         page++;
